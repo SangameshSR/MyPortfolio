@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangamesh | About Me</title>
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons and 3D Tilt Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  </head>
+  <body data-theme="dark">
+    <!-- Moving Background Glow -->
+    <div class="background-overlay"></div>
+
+    <!-- Consistent Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div
+          class="logo gradient-text"
+          style="font-weight: 600; font-size: 1.4rem"
+        >
+          SANGAMESH
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="nav-active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li>
+            <button
+              id="theme-toggle"
+              class="theme-btn"
+              style="
+                background: none;
+                border: none;
+                color: var(--text);
+                cursor: pointer;
+              "
+            >
+              <i class="fas fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="content-container">
+      <h2 class="section-title">Professional Profile</h2>
+
+      <div class="about-grid">
+        <!-- Summary Card (Tilt Enabled) -->
+        <div class="glass-card about-main" data-tilt>
+          <h3 class="gradient-title">
+            <i class="fas fa-user-tie"></i> Summary
+          </h3>
+          <p>
+            Final-year Information Science student at B.L.D.E.A's V.P. Dr. P.G.
+            Halakatti College of Engineering and Technology. Passionate about
+            software development with a CGPA of 8.3. Aiming to contribute
+            effectively in software development roles with problem-solving and
+            teamwork abilities.
+          </p>
+          <div class="personal-info">
+            <p>
+              <strong><i class="fas fa-map-marker-alt"></i> Location:</strong>
+              Basavakalyan ,585327 Dist:Bidar State: Karnataka , India
+            </p>
+            <p>
+              <strong><i class="fas fa-language"></i> Languages:</strong>
+              English, Hindi, Kannada, Marathi
+            </p>
+            <p>
+              <strong><i class="fas fa-gamepad"></i> Hobbies:</strong> Reading,
+              Cricket, Traveling
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills Card with Experience Levels (Tilt Enabled) -->
+        <div class="glass-card" data-tilt>
+          <h3 class="gradient-title">
+            <i class="fas fa-code"></i> Technical Expertise
+          </h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Java</span
+              ><span class="level-badge advanced">Advanced</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>C</span
+              ><span class="level-badge advanced">Intermediate</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Web Development</span
+              ><span class="level-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>MySQL</span
+              ><span class="level-badge proficient">Proficient</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card (Tilt Enabled) -->
+        <div class="glass-card education-timeline" data-tilt>
+          <h3 class="gradient-title">
+            <i class="fas fa-graduation-cap"></i> Education
+          </h3>
+          <div class="timeline-item">
+            <h4 style="color: var(--primary)">B.E. in Information Science</h4>
+            <p class="institution">
+              B.L.D.E.A's V.P. Dr. P.G. Halakatti College
+            </p>
+            <p class="date">2022 - 2026 | CGPA: 8.3/10</p>
+          </div>
+          <div class="timeline-item">
+            <h4 style="color: var(--primary)">Pre-University (PUC)</h4>
+            <p class="institution">Diomond PU College, Basavakalyan</p>
+            <p class="date">2020 - 2022 | Percentage: 90.6%</p>
+          </div>
+          <div class="timeline-item">
+            <h4 style="color: var(--primary)">SSLC</h4>
+            <p class="institution">Shree Basaveshwar High School, Basavakalyan</p>
+            <p class="date">2020 | Percentage: 88%</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Custom Logic -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

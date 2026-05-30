@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangamesh | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  </head>
+  <body data-theme="dark">
+    <div id="custom-cursor"></div>
+
+    <nav class="navbar reveal active">
+      <div class="nav-container">
+        <div class="logo gradient-text">SANGAMESH</div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-btn">
+              <i class="fas fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="bento-container">
+      <div class="glass-card bento-item profile-box reveal active" data-tilt>
+        <img
+          src="P2.jpeg"
+          alt="Sangamesh"
+          class="bento-img"
+        />
+      </div>
+
+      <div class="glass-card bento-item identity-box reveal active" data-tilt>
+        <div class="status-chip">
+          <span class="dot"></span> Final Year ISE Student
+        </div>
+        <h1 class="gradient-text">Sangamesh Raiwade</h1>
+        <p>
+          B.L.D.E.A's V.P. Dr. P.G. Halakatti College of Engineering and
+          Technology, Vijayapura | 2022-2026
+        </p>
+      </div>
+
+      <div class="glass-card bento-item social-box reveal active" data-tilt>
+        <div class="bubble-grid">
+          <a
+            href="https://github.com/SangameshSR"
+            class="social-link-big"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/sangamesh-raiwade"
+            class="social-link-big"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="mailto:sangameshraiwade@gmail.com"
+            class="social-link-big"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:+916361081049" class="social-link-big"
+            ><i class="fas fa-phone"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="glass-card bento-item skills-box reveal active" data-tilt>
+        <p class="box-label">Skills</p>
+        <div class="pills-container">
+          <span class="tech-pill">Java</span>
+          <span class="tech-pill">C</span>
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">Java Script</span>
+          <span class="tech-pill">HTML/CSS</span>
+        </div>
+      </div>
+
+      <div
+        class="glass-card bento-item contact-box reveal active"
+        data-tilt
+        style="grid-column: span 4"
+      >
+        <h3 class="gradient-title">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </h3>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/meenlynl"
+          method="POST"
+          class="suggestion-form"
+        >
+          <div class="input-group">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input type="tel" name="phone" placeholder="Phone Number" />
+            <input type="text" name="city" placeholder="City" />
+          </div>
+          <textarea
+            name="message"
+            placeholder="Your Suggestions or Comments"
+            rows="4"
+            required
+          ></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
